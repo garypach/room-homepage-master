@@ -1,19 +1,73 @@
 @import url(_reset.css);
-
-header {
+img{
+  display: block;
+}
+.test-header{
   display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  background-color: white;
+  height: 100vh;
+}
+.test-header .left{
+  width: 100%;
+  height: 50%;
+}
+.test-header .left img{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+ 
+  .test-header  .right{
+      width: 100%;
+      height: 50%;
+  }
+.test{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  background-color: white;
+  height: 100vh;
+}
+.test .left img{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.test .right img{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.test .left{
+  width: 100%;
+  height: 45%;
+}
+  .test .mid{
+    width: 100%;
+    height: 55%;
+    background-color: violet;
+    }
+    .test  .right{
+      width: 100%;
+      height: 45%;
+    }
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 body {
   background-color: antiquewhite;
 }
 .header-img {
-  width: 50%;
+  width: 100%;
   position: relative;
   z-index: 3;
 }
 
 .menu {
-  width: 100%;
   padding: 7% 5%;
   position: absolute;
   top: 0;
@@ -46,7 +100,6 @@ nav ul {
   margin: 0;
   width: 375px;
   padding: 30px 0;
-  background-color: #fff;
 }
 nav ul li {
   margin-left: 45px;
@@ -60,12 +113,54 @@ nav ul li a {
 }
 
 .header-txt {
-  width: 50%;
-  height: 22.5em;
-  background-color: white;
+  width: 100%;
+  height: 360px;
+  background-color: red;
 }
 
 @media screen and (min-width: 1024px) {
+  .test-header{
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    background-color: white;
+    height: 65vh;
+  }
+  .test-header .left{
+    width: 60%;
+    height: 65vh;
+    }
+      .test-header  .right{
+        width: 40%;
+        height: 65vh;
+      }
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 65vh;
+    background-color: aqua;
+  }
+  .test{
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    background-color: white;
+    height: 30vh;
+  }
+  .test .left{
+    width: 30%;
+    height: 35vh;
+    }
+    .test .mid{
+      width: 40%;
+      height: 35vh;
+      background-color: violet;
+      }
+      .test  .right{
+        width: 30%;
+        height: 35vh;
+      }
   .menu {
     padding: 2rem;
   }
