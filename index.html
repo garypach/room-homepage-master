@@ -2,24 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
+  <title>Room homepage</title>
+  <link rel="stylesheet" href="roomStyles.css">
 </head>
 <body>
-  Home
-  Shop
-  About
-  Contact
-
+  <header>
+    <div class="header-img">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./images/desktop-image-hero-1.jpg">
+        <img src="./images/mobile-image-hero-1.jpg" alt="furniture">
+      </picture>
+      <div class="menu">
+        <div class="close"><img src="./images/icon-close.svg" alt="Hamburger menu"></div>
+        <div class="hamburger active"><img src="./images/icon-hamburger.svg" alt="Hamburger menu"></div>
+        <div class="logo"><img src="./images/logo.svg" alt="Room"></div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-txt">
+      <div>
+        testing
+      </div>
+    </div>
+  </header>
+ 
+<main>
   Discover innovative ways to decorate
 
   We provide unmatched quality, comfort, and style for property owners across the country. 
@@ -50,10 +65,7 @@
   Make each room unique, or pick a cohesive theme that best express your interests and what
   inspires you. Find the furniture pieces you need, from traditional to contemporary styles
   or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</main>
+<script src="app.js"></script>
 </body>
 </html>
