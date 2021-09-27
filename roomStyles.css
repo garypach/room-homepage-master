@@ -1,4 +1,7 @@
 @import url(_reset.css);
+*{
+  box-sizing: border-box;
+}
 img{
   display: block;
 }
@@ -8,6 +11,8 @@ img{
   width:100%;
   background-color: white;
   height: 100vh;
+  max-height: 800px;
+
 }
 .test-header .left{
   position: relative;
@@ -24,6 +29,40 @@ img{
       width: 100%;
       height: 50%;
       position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+  }
+  .header-text{
+    text-align: left;
+    margin: auto;
+    display: block;
+    margin: auto;
+    text-align: left;
+    line-height: 2;
+    max-width: 400px;
+  }
+  .change-text-header{
+    line-height: 45px;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 35px;
+  }
+  .change-text{
+    font-size: 12px;
+  }
+  .arrow{
+    margin-left: 40px;
+  }
+  .shop{
+    display: flex;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .shop-text{
+    text-transform: uppercase;
+    letter-spacing: 15px;
   }
 .test{
   display: flex;
@@ -31,6 +70,7 @@ img{
   width:100%;
   background-color: white;
   height: 100vh;
+  max-height: 500px;
 }
 .test .left img{
   object-fit: fill;
@@ -47,9 +87,13 @@ img{
   height: 45%;
 }
   .test .mid{
+    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 55%;
     background-color: violet;
+    overflow: hidden;
     }
     .test  .right{
       width: 100%;
@@ -62,12 +106,8 @@ img{
 }
 body {
   background-color: antiquewhite;
-}
-.header-img {
-  width: 100%;
-  position: relative;
-  z-index: 3;
-}
+  font-family: 'Spartan', sans-serif;}
+
 
 .menu {
   padding: 7% 5%;
@@ -130,14 +170,27 @@ nav ul li a {
 }
 .button-mobile .arrow-left{
 background-color: black;
-padding: 30px 35px;
+padding: 25px 35px;
 }
 .button-mobile .arrow-right{
   background-color: black;
-  padding: 30px 35px;
+  padding: 25px 35px;
 }
-
-
+.about-text{
+  display: block;
+  max-width: 600px;
+  padding: 0 4px;
+  margin: auto;
+  text-align: left;
+  font-size: 12px;
+  line-height: 2;
+}
+.about-text :nth-child(1){
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-bottom:  9px;
+}
 @media screen and (min-width: 1024px) {
   .button-mobile{
     display: none;
@@ -221,10 +274,11 @@ padding: 30px 35px;
   }
   .button .arrow-left{
   background-color: black;
-  padding: 30px 35px;
+  padding: 25px 34.5px;
   }
   .button .arrow-right{
     background-color: black;
-    padding: 30px 35px;
+    padding: 25px 34.5px;
   }
+ 
 }
