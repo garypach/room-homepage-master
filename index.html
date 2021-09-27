@@ -36,9 +36,17 @@
     </div> -->
     <div class="test-header">
       <div class="one left" style="background-color: red;">
+        <div class="button-mobile">
+          <div class="arrow-left" onclick="prevImage()">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="arrow-right" onclick="nextImage()">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+          </div>
+        </div>
         <picture>
-          <source media="(min-width: 1024px)" srcset="./images/desktop-image-hero-1.jpg">
-          <img src="./images/mobile-image-hero-1.jpg" alt="furniture" style="width: 100%; ">
+          <source class="desktop-header-img" media="(min-width: 1024px)" srcset="./images/desktop-image-hero-1.jpg">
+          <img class="mobile-header-img" src="./images/mobile-image-hero-1.jpg" alt="furniture" style="width: 100%; ">
         </picture> 
         <div class="menu">
           <div class="close"><img src="./images/icon-close.svg" alt="Hamburger menu"></div>
@@ -56,8 +64,13 @@
       </div>
   
       <div class="one right" style="background-color: darkcyan;">
-        <div>
-          testing
+        <div class="button">
+          <div class="arrow-left" onclick="prevImage()">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="arrow-right"onclick="nextImage()">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+          </div>
         </div>
       </div>
     </div>
