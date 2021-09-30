@@ -43,10 +43,11 @@ img{
     text-align: left;
     line-height: 2;
     max-width: 400px;
+    padding: 0 20px;
   }
   .change-text-header{
     line-height: 45px;
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 35px;
   }
@@ -203,6 +204,7 @@ padding: 25px 35px;
     line-height: 2;
     max-width: 400px;
     font-size: 12px;
+    padding: 0 20px;
 }
 .about-text :nth-child(1){
   color: black;
@@ -212,6 +214,37 @@ padding: 25px 35px;
   padding-bottom:  9px;
 }
 @media screen and (min-width: 1024px) {
+  .header-text{
+    text-align: left;
+    margin: auto;
+    display: block;
+    margin-bottom: 130px;
+    text-align: left;
+    line-height: 2;
+    max-width: 400px;
+  }
+  .change-text-header{
+    line-height: 45px;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 35px;
+  }
+  .change-text{
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+  }
+  .arrow{
+    margin-left: 40px;
+  }
+  .shop{
+    display: flex;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .shop-text{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+  }
   .button-mobile{
     display: none;
   }
